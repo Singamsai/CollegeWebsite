@@ -1,0 +1,83 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class='logo' src="images/logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>ABOUT US</h1>
+    </section>
+    
+    
+<!------- about us content -------->
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Why GEMS:</h1>     
+            <p><b>At GEMS</b>, we mentor students reach their full potential by providing structured education fused with intregrated academics,<br> encouraging competative spirit and sense of responsibilities</p>
+            <br>
+            <a href="youtube video" class="hero-btn red-btn">EXPOLER NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+    <div class="row2">
+        <h1>How we teach:</h1>
+            <p><b>24/7 Portal-</b>After college assistance for students' support. Tailor-made approach to suit the needs  of Individual learners.</p>
+            <p><b>Structured Instructions-</b>Encourage and teach students to make their own decistions in a classroom setting, thus helping learners to acquire skill based learning.</p>
+            <p><b>Classroom Discussions-</b>Questions are discussed in detail by the teacher-mentors in the class, where a student identifies and comprehends intricacies of various kinds of questions.</p>
+            <p><b>Guided Practice-</b>Enables learners to analyse and apply the concepts taught.</p>
+            <p><b>Independent Learning-</b>An assignment is given to learners in the discussed concepts. The student is expected to work an in-depth understanding and reasoning ability.</p>
+            <p><b>Remediation-</b>All necessary and possible remedial steps will be taken-wherever and whenever necessary</p>
+    </div>    
+</section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>we mentor students reach their full potential by providing structured education fused with intregrated academics,<br> encouraging competative spirit and sense of responsibilities.</p>
+        <div class="icons">
+            <a href="www.facebook.com/gemsacademia"><i class="fa fa-facebook"></i></a>
+            <a href="www.twitter.com/gemsacademia"><i class="fa fa-twitter"></i></a>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Happy <i class="fa fa-heart-o"></i> Learning</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

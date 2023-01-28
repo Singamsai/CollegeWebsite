@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Website Design - Easy Tutorials</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class='logo' src="images/logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>OUR STAFF</h1>
+    </section>
+    
+
+    <section class="staff">
+        <h1>Directors' Point</h1>
+        <p>Dedication, determination and consistency</p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/prathap.jpeg">
+                    <div> 
+                        <p>I Believe That The Concepts Are Better Understood When It Is Applied In Simple Real Life Situations.</p>
+                        <h3>M Prathap</h3>
+                        <h5>MATH, BITS PILANI</h5>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/suneel.jpeg">
+                    <div>
+                        <p>Success To Me, Is Finding A Right Place At The Right Time With The Right Guidance And Motivation </p>
+                        <h3>M Sunil</h3>
+                        <h5>CHEMISTRY, NIT WARANGAL</h5>
+                        <!-- <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i> -->
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+        <div class="icons">
+            <a href="www.facebook.com/gemsacademia"><i class="fa fa-facebook"></i></a>
+            <a href="www.twitter.com/gemsacademia"><i class="fa fa-twitter"></i></a>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Happy <i class="fa fa-heart-o"></i> Learning</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
