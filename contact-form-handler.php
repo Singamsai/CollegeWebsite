@@ -5,7 +5,7 @@
     $message = $_POST['message'];
 
 
-    $email_from = 'info@gemsacademia.net';
+    $email_from = 'pratapmandhanapu18@gmail.com';
 
     $email_subject = "New Form Submission";
     
