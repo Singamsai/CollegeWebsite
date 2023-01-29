@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>University Website Design - Easy Tutorials</title>
+<title>Gemsacademia</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -16,7 +16,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="course.html">COURSE</a></li>
-                    <li><a href="staff.html">STAFF</a></li>
+                    <li><a href="staff.html">TEAM</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -30,7 +30,6 @@
     
 <section class="course">
     <h1>Courses We Offer</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div class="row">
         <div class="course-col">
             <h3>JEE( Main+Advanced )</h3>
@@ -73,7 +72,6 @@
     
 <section class="facility">
     <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="row">
             <div class="facility-col">
                 <img src="images/library.png">
@@ -81,12 +79,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
             </div>
             <div class="facility-col">
-                <img src="images/classrooms.jpeg">
+                <img id="classrooms" src="images/classrooms.jpeg">
                 <h3>Smart Classrooms</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
             </div>
             <div class="facility-col">
-                <img src="images/infrastructure.jpeg">
+                <img id="infrastructure" src="images/infrastructure.jpeg">
                 <h3>Infrastructure</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
             </div>
@@ -97,7 +95,7 @@
 
 <section class="footer">
         <h4>About Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+        <p>we mentor students reach their full potential by providing structured education fused with intregrated academics,<br> encouraging competative spirit and sense of responsibilities.</p>
         <div class="icons">
             <a href="www.facebook.com/gemsacademia"><i class="fa fa-facebook"></i></a>
             <a href="www.twitter.com/gemsacademia"><i class="fa fa-twitter"></i></a>
@@ -119,6 +117,18 @@
     function hideMenu() {
         navLinks.style.right = "-200px";
     }
+    const infrastructures = document.getElementById("infrastructure");
+    let classroom= ["images/classrooms.jpeg", "images/classrooms2.jpeg", "images/classrooms4.jpeg", "images/infrastructure2.jpeg","images/infrastructure9.jpeg", "images/infrastructure.jpeg", "images/infrastructure3.jpeg", "images/infrastructure10.jpeg"];
+    const classrooms = document.getElementById('classrooms');
+    let i=0;
+    setInterval(()=>{
+        classrooms.setAttribute('src', classroom[i]);
+        i++;
+        infrastructures.setAttribute('src', classroom[i+2]);
+        if(i==3 ){
+            i=0;
+        }   
+    },1000)
 </script>  
     
 </body>
