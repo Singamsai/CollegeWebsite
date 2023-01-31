@@ -412,6 +412,11 @@ h3{
 }
 
 /*------- Contact Us Page ------------*/
+input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
 
 .location{
     width: 80%;
